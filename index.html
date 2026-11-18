@@ -20,8 +20,62 @@
 		<div class="container d-flex justify-content-center">
 			<div class="spinner-border text-danger" role="status">
 				<span class="visually-hidden">Loading...</span>
-			</div>&nbsp;
-            <h3 id="info">Stanno arrivando i libri...</h3>
+			</div>
+			&nbsp;
+			<h3 id="info">Stanno arrivando i libri...</h3>
+		</div>
+
+		<hr />
+
+		<div class="container">
+			<div id="semaforo">⚪</div>
+			<div
+				class="spinner-border text-danger"
+				role="status"
+				id="spinSemaforo"
+			>
+				<span class="visually-hidden">Loading...</span>
+			</div>
+			<p id="testo">Stiamo aspettando la promise del semaforo...</p>
+			<h3 id="promiseState"></h3>
+		</div>
+
+		<hr />
+
+		<div class="container">
+			<div class="row" id="users"></div>
+		</div>
+
+		<div class="container">
+			<form>
+				<div class="row">
+					<div class="col-lg-4">
+						<label for="userName" class="form-label"
+							>Nome completo</label
+						>
+						<input type="text" id="userName" class="form-control" />
+					</div>
+					<div class="col-lg-4">
+						<label for="userAlias" class="form-label"
+							>Uasername scelto</label
+						>
+						<input
+							type="text"
+							id="userAlias"
+							class="form-control"
+						/>
+					</div>
+					<div class="col-lg-4">
+						<label for="userEmail" class="form-label">Email</label>
+						<input
+							type="email"
+							id="userEmail"
+							class="form-control"
+						/>
+					</div>
+					<button type="submit" class="btn btn-success w-25 mt-3">REGISTRA</button>
+				</div>
+			</form>
 		</div>
 
 		<script
